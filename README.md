@@ -1,10 +1,14 @@
 # Żłobki i kluby dziecięce w Gdańsku
-Power BI report about daycare facilities in Gdansk.
+<i>Power BI report about daycare facilities in Gdansk.</i>
 <br><br>
 :point_right: Zobacz raport na żywo w przeglądarce: 
 <a href="https://app.powerbi.com/view?r=eyJrIjoiN2E1OWQ0N2EtNzFkNC00NTc0LTk4NjgtNWY5Y2I0NzRjOTM2IiwidCI6Ijk3NmI5Y2IwLWJiYjctNDg2NC04NjAwLTE1NTk4MzA5YjY3YiJ9">LINK</a>
 <br><br>
 <img src="https://raw.githubusercontent.com/jusjag/ZlobkiGdansk/main/ZlobkiGdansk_raport.png">
+
+## Projekt
+Cel: praktyczne wykorzystanie umiejętności pracy z Power Query, Power BI i DAX.<br>
+Dane: publicznie dostępne dane z Rejestru Żłobków, uzupełnione o inne informacje wymienione w sekcji poniżej. Stan na rok 2022/2023.<br>
 
 ## 1. Źródła danych
 Rejestr Żłobków i Klubów Dziecięcych (dane.gov):<br>
@@ -37,5 +41,10 @@ Dane dot. ogólnopolskiej liczby żłobków w 2022 (GUS):<br>
 Link: https://stat.gov.pl/obszary-tematyczne/dzieci-i-rodzina/dzieci/zlobki-i-kluby-dzieciece-w-2022-roku,3,10.html<br>
 <br>
 
-## Więcej informacji
-Szczegółowy opis pozyskania i czyszczenia danych oraz dokumentacja raportu pojawią się wkrótce :)
+## 2. Przygotowanie danych
+Ten projekt wymagał ode mnie bardzo dużo zakulisowej pracy z zebraniem oraz przygotowaniem danych. Po raz kolejny przekonałam się, jak bardzo lubię pracę z Power Query :)<br><br>
+1. Podstawą raportu jest zestaw danych z Rejestru Żłobków (źródło). Zawiera szereg szczegółowych informacji nt. numeru rejestru, danych adresowych, kontaktowych, liczby dostępnych i zajętych miejsc, kosztów, źródeł finansowania oraz dostosowań do specjalnych potrzeb.<br>
+Przygotowanie danych obejmowało głównie odfiltrowanie placówek spoza Gdańska, usunięcie niepotrzebnych bądź nieużywanych kolumn (dane kontaktowe, udogodnienia) oraz ustawienie odpowiednich typów danych.
+2. Przeglądając dane zauważyłam, że nie są one aktualne, na liście znajduje się np. żłobek o którym wiem, że jest zamknięty od ponad roku. Dlatego zdecydowałam się na pobranie danych również z drugiego źródła: portalu Empatia (link). Choć dane są przedstawione w sposób wygodny do przeglądania, nie są jednak możliwe do pobrania w prosty sposób - są ładowane na bieżąco w ramce zamieszczonej wewnątrz strony. Udało mi się jednak dotrzeć do źródła ramki, ręcznie rozwinąć całą potrzebną listę, zapisać stronę na dysku i takie dane załadować do Power Query.
+3. Za pomocą inner joina połączyłam dane z obu powyższych tabel, otrzymując listę 102 placówek. Choć trudno samodzielnie określić stopień rzetelności danych, zakładam że oddają one ogólny obraz sytuacji żłobków i klubów dziecięcych w Gdańsku.
+4. Zależało mi na tym, aby pokazać dane na mapie dzielnic Gdańska. Power BI nie obsługuje jednak bezpośrednio takich danych, a mimo wielu prób nie udało mi się stworzyć prawidłowej mapy dzielnic z użyciem wbudowanych narzędzi.
