@@ -37,3 +37,13 @@ Skorzystałam z udostępnionych przez Miasto Gdańsk plików SHP z granicami dzi
 Na potrzeby obliczenia wskaźnika liczby żłobków na 1 tysiąc mieszkańców wykorzystałam:<br>
 - Dane dot. ludności kraju na 31.12.2022 - z publikacji "Sytuacja demograficzna Polski do roku 2022" dostępnego na <a href="https://stat.gov.pl/obszary-tematyczne/ludnosc/ludnosc/sytuacja-demograficzna-polski-do-roku-2022,40,3.html">stronie GUS</a><br>
 - Dane dot. ogólnopolskiej liczby żłobków w 2022 - z publikacji "Żłobki i Kluby Dziecięce w 2022 roku" dostępnej na <a href="https://stat.gov.pl/obszary-tematyczne/dzieci-i-rodzina/dzieci/zlobki-i-kluby-dzieciece-w-2022-roku,3,10.html">stronie GUS</a>
+
+## Raport
+Zobacz raport na żywo w przeglądarce: 
+<a href="https://app.powerbi.com/view?r=eyJrIjoiN2E1OWQ0N2EtNzFkNC00NTc0LTk4NjgtNWY5Y2I0NzRjOTM2IiwidCI6Ijk3NmI5Y2IwLWJiYjctNDg2NC04NjAwLTE1NTk4MzA5YjY3YiJ9&pageName=ReportSection40897505d313de90450e">LINK</a>
+<br><br>
+<img src="https://raw.githubusercontent.com/jusjag/ZlobkiGdansk/main/ZlobkiGdansk_raport.png"><br><br>
+<img src="https://raw.githubusercontent.com/jusjag/ZlobkiGdansk/main/ZlobkiGdansk_dzielnice.png"><br><br>
+<img src="https://raw.githubusercontent.com/jusjag/ZlobkiGdansk/main/ZlobkiGdansk_publ.png"><br><br>
+<img src="https://raw.githubusercontent.com/jusjag/ZlobkiGdansk/main/ZlobkiGdansk_koszty.png"><br><br>
+<img src="https://raw.githubusercontent.com/jusjag/ZlobkiGdansk/main/ZlobkiGdansk_mapy.png"><br><br>
