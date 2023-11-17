@@ -2,7 +2,7 @@
 Power BI report about daycare facilities in Gdansk.
 <br><br>
 :point_right: Zobacz raport na żywo w przeglądarce: 
-<a href="https://app.powerbi.com/view?r=eyJrIjoiN2E1OWQ0N2EtNzFkNC00NTc0LTk4NjgtNWY5Y2I0NzRjOTM2IiwidCI6Ijk3NmI5Y2IwLWJiYjctNDg2NC04NjAwLTE1NTk4MzA5YjY3YiJ9">LINK</a>
+<a href="https://app.powerbi.com/view?r=eyJrIjoiN2E1OWQ0N2EtNzFkNC00NTc0LTk4NjgtNWY5Y2I0NzRjOTM2IiwidCI6Ijk3NmI5Y2IwLWJiYjctNDg2NC04NjAwLTE1NTk4MzA5YjY3YiJ9&pageName=ReportSection40897505d313de90450e">LINK</a>
 <br><br>
 <img src="https://raw.githubusercontent.com/jusjag/ZlobkiGdansk/main/ZlobkiGdansk_raport.png">
 
