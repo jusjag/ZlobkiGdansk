@@ -26,7 +26,7 @@ Informacje nt. listy placówek publicznych oraz liczby grup pochodzą ze strony 
 
 ### Lista dzielnic Gdańska
 Aby przeanalizować sytuację w poszczególnych dzielnicach, wykorzystałam listę sektorów i dzielnic dostępną na stronie <b>Czyste Miasto Gdańsk</b> (<a href="https://czystemiasto.gdansk.pl/zdizgdanskfiles/image/gdansk_ulice_sektory_201307.pdf">czystemiasto.gdansk.pl</a>).<br>
-Po wyodrębnieniu ulicy z adresu placówki w Rejestrze Żłobków mogłam za pomocą "inner joina" dołączyć spis ulic i dzielnic. W przypadku dłuższych ulic, przypisanych do więcej niż jednej dzielnicy, przyporządkowałam dzielnice ręcznie - takich przypadków było raptem kilkanaście.<br><br>
+Po wyodrębnieniu z Rejestru Żłobków osobnej kolumny zawierającej nazwę ulicy (bez numeru) mogłam użyć tej kolumny jako klucza do połączenia z tabelą dot. dzielnic. W przypadku dłuższych ulic, przypisanych do więcej niż jednej dzielnicy, przyporządkowałam informacje ręcznie - takich przypadków było raptem kilkanaście.<br><br>
 Dane dot. liczby mieszkańców poszczególnych dzielnic pobrałam ze strony Miasta Gdańsk (<a href="https://www.gdansk.pl/gdansk-w-liczbach/mieszkancy,a,108046">gdansk.pl</a>).<br>
 
 ### Mapa dzielnic Gdańska
