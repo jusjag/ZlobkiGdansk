@@ -47,3 +47,31 @@ Zobacz raport na żywo w przeglądarce:
 <img src="https://raw.githubusercontent.com/jusjag/ZlobkiGdansk/main/ZlobkiGdansk_publ.png"><br><br>
 <img src="https://raw.githubusercontent.com/jusjag/ZlobkiGdansk/main/ZlobkiGdansk_koszty.png"><br><br>
 <img src="https://raw.githubusercontent.com/jusjag/ZlobkiGdansk/main/ZlobkiGdansk_mapy.png"><br><br>
+
+## 2. Przykładowe miary i obliczenia
+Kalkulacja do kafelka pokazującego koszt żłobka publicznego, tak aby w/w wartość nie była filtrowana przez inne elementy raportu.
+```
+Miesięczny koszt PUBL = 
+CALCULATE (
+    AVERAGE(Finanse[Opłata za pobyt - miesięczna]),
+    ALLEXCEPT(Finanse, Finanse[Publiczny]),
+    Finanse[Publiczny] = "TAK",
+    ALL('Żłobki_info')
+    )
+```
+<br><br>
+Kalkulacja do kafelka pokazującego liczbę miejsc w wybranej dzielnicy (zakładka mapy) - w taki sposób, aby przy braku placówek wyświetlał "0" zamiast "(blank)".
+```
+MD Liczba miejsc = CALCULATE(
+    IF(SUM(Dzielnice_info[D Liczba miejsc])=0,"0",SUM('Żłobki_info'[Liczba miejsc])),
+    CROSSFILTER('Żłobki_info'[Dzielnica], Dzielnice_info[Dzielnica], Both)
+)
+```
+<br><br>
+Kalkulacja do kafelka pokazującego przedział opłat - wartości zmieniające się w zależności od opcji zaznaczonej w pozostałych elementach na stronie.
+```
+Opłata mc przedział = 
+CONCATENATE(MIN(Finanse[Opłata za pobyt - miesięczna]), 
+    CONCATENATE(" - ", 
+        CONCATENATE(MAX(Finanse[Opłata za pobyt - miesięczna]), " zł")))
+```
